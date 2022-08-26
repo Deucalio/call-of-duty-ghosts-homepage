@@ -7,3 +7,17 @@ html {
 .colorBlue {
     color: #5e82a3  !important; 
 }
+.icon::after{
+    content: '' !important;
+    background: #000 !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+  }
+  .icon::before{
+    content: '' !important;
+    background: #000 !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+  }

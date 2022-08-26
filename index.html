@@ -17,74 +17,105 @@
         .colorBlue {
             color: #5e82a3 !important;
         }
+
+        @media (min-width: 1024px) {
+
+            /* If the width of the element is greater or equals to 1024px
+      .first-nav class applies */
+            .first-nav {
+                background-image: url("https://www.callofduty.com/content/dam/atvi/callofduty/global/global-nav/global-nav-bg.png");
+                background-color: #000000;
+                background-size: 2px;
+                height: 50px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+
+            /* If the width of the screen is less than or equals to 1024px
+      .hide class applies  */
+            .hide {
+                display: none !important;
+            }
+        }
+        @media (min-width: 63rem) and (max-width: 75rem){
+            .fix{
+                height: 7rem;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <nav class="bg-black py-2 px-6 sticky top-0">
-        <ul class="flex flex-wrap items-center justify-between">
-            <li>
-                <img class="w-48"
-                    src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/legacy/ghosts/cod-ghosts-logo.png"
-                    alt="" />
-            </li>
-            <li class="text-4xl font-medium uppercase tracking-wide text-white">Purchase</li>
-            <li>
-                <div class="dropdown dropdown-end">
-                    <label tabindex="0" class=""><svg class="h-16" style="color: white;"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="h-6 w-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg></label>
-                    <ul tabindex="0"
-                        class="bg-slate-900 dropdown-content menu p-2 flex flex-col gap-4 w-[90vw] h-screen text-[#969696]">
-                        <li><img class="w-44"
-                                src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/global/cod-logo-white.svg"
-                                alt=""></li>
-                        <li class="text-xl text-left hover:text-white uppercase"><a>Games</a></li>
-                        <li class="text-xl text-left hover:text-white uppercase"><a>News</a></li>
-                        <li class="text-xl text-left hover:text-white uppercase"><a>Esports</a></li>
-                        <li class="text-xl text-left hover:text-white uppercase"><a>Support</a></li>
-                        <li class="text-xl text-left hover:text-white uppercase"><a>Shop</a></li>
-                        <li class="text-xl text-left hover:text-white uppercase"><a>My call of duty</a></li>
-                        <li class="text-xl text-left hover:text-white uppercase"><a>Login</a></li>
-                        <li class="text-xl text-left hover:text-white uppercase"><a>Sign up</a></li>
-                    </ul>
-                </div>
-            </li>
+    <div class="fix hide first-nav h-16 py-4 px-6 text-[#969696] lg:h-20 lg:py-3">
+        <ul class="flex flex-wrap justify-between lg:gap-y-1">
+          <div class="flex flex-wrap gap-6">
+            <li><img class="w-44" src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/global/cod-logo-white.svg" alt="" /></li>
+            <li class="text-xl uppercase hover:text-[#71af3a] cursor-pointer"><a>Games</a></li>
+            <li class="text-xl uppercase hover:text-[#71af3a] cursor-pointer"><a>News</a></li>
+            <li class="text-xl uppercase hover:text-[#71af3a] cursor-pointer"><a>Esports</a></li>
+            <li class="text-xl uppercase hover:text-[#71af3a] cursor-pointer"><a>Support</a></li>
+            <li class="text-xl uppercase hover:text-[#71af3a] cursor-pointer"><a>Shop</a></li>
+          </div>
+          <div class="flex flex-wrap gap-6">
+            <li class="text-left text-xl uppercase hover:text-white cursor-pointer"><a>Login</a></li>
+            <li class="text-left text-xl uppercase hover:text-white cursor-pointer"><a>Sign up</a></li>
+            <li class="text-left text-xl uppercase hover:text-white cursor-pointer"><a>My call of duty</a></li>
+            <li class="text-left text-xl uppercase hover:text-white cursor-pointer"><a>Purchase</a></li>
+          </div>
         </ul>
-    </nav>
-
-    <section class="bg-black">
-        <div class="hero">
-            <div class="hero-img wrapper">
-                <img src="https://www.callofduty.com/content/dam/atvi/callofduty/legacy/common/cod-ghosts.jpg" alt="" />
+      </div>
+      <nav class="sticky top-0 bg-black py-2 px-6">
+        <ul class="flex flex-wrap items-center justify-between">
+          <li>
+            <img class="w-48" src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/legacy/ghosts/cod-ghosts-logo.png" alt="" />
+          </li>
+          <li class="text-4xl font-medium uppercase tracking-wide text-white lg:hidden">Purchase</li>
+          <li>
+            <div class="dropdown dropdown-end lg:hidden">
+              <label tabindex="0" class=""
+                ><svg class="h-16" style="color: white;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg
+              ></label>
+              <ul tabindex="0" class="overflow-y-auto dropdown-content menu flex h-screen w-[90vw] flex-col gap-4 bg-slate-900 p-2 text-[#969696]">
+                <li><img class="w-44" src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/global/cod-logo-white.svg" alt="" /></li>
+                <li class="text-left text-xl uppercase hover:text-white"><a>Games</a></li>
+                <li class="text-left text-xl uppercase hover:text-white"><a>News</a></li>
+                <li class="text-left text-xl uppercase hover:text-white"><a>Esports</a></li>
+                <li class="text-left text-xl uppercase hover:text-white"><a>Support</a></li>
+                <li class="text-left text-xl uppercase hover:text-white"><a>Shop</a></li>
+                <li class="text-left text-xl uppercase hover:text-white"><a>My call of duty</a></li>
+                <li class="text-left text-xl uppercase hover:text-white"><a>Login</a></li>
+                <li class="text-left text-xl uppercase hover:text-white"><a>Sign up</a></li>
+              </ul>
             </div>
+          </li>
+        </ul>
+      </nav>
+      
+      <section class="bg-black">
+        <div class="hero">
+          <div class="hero-img wrapper">
+            <img src="https://www.callofduty.com/content/dam/atvi/callofduty/legacy/common/cod-ghosts.jpg" alt="" />
+          </div>
         </div>
         <div class="hero-info-wrapper bg-black py-12 px-9">
-            <div class="hero-text">
-                <p class="colorBlue text-3xl tracking-tight">CALL OF DUTY</p>
-                <p class="colorBlue mb-1 text-5xl tracking-normal">GHOSTS</p>
-                <p class="max-w-2xl text-lg text-white"><span class="font-semibold">WE ARE ALL WE'VE GOT.</span> This
-                    new chapter in the Call of Duty® franchise features a fresh dynamic, where players are on the side
-                    of a crippled nation, fighting not for freedom, or liberty, but simply to survive. Special
-                    Operations forces, a mysterious group known only as "Ghosts", lead the battle against a
-                    newly-emerged, technologically-superior, global power.</p>
-            </div>
-            <div
-                class="sm:w-3/4 md:w-2/4 xl:w-2/5 hero-btn ml-auto flex w-1/2 flex-wrap justify-between gap-x-7 bg-[#5e82a3] py-4 px-6">
-                <p class="text-2xl uppercase tracking-wide text-black">View Trailer</p>
-                <span class="icon inline-block h-8 w-8 border-[3px] border-black align-middle">
-                    <svg class="-ml-1 -mt-1 h-8 text-black" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m7-7H5" />
-                    </svg>
-                </span>
-            </div>
+          <div class="hero-text">
+            <p class="colorBlue text-3xl tracking-tight">CALL OF DUTY</p>
+            <p class="colorBlue mb-1 text-5xl tracking-normal">GHOSTS</p>
+            <p class="max-w-2xl text-lg text-white"><span class="font-semibold">WE ARE ALL WE'VE GOT.</span> This new chapter in the Call of Duty® franchise features a fresh dynamic, where players are on the side of a crippled nation, fighting not for freedom, or liberty, but simply to survive. Special Operations forces, a mysterious group known only as "Ghosts", lead the battle against a newly-emerged, technologically-superior, global power.</p>
+          </div>
+          <div class="hero-btn ml-auto flex w-1/2 flex-wrap justify-between gap-x-7 bg-[#5e82a3] py-4 px-6 sm:w-3/4 md:w-2/4 xl:w-2/5">
+            <p class="text-2xl uppercase tracking-wide text-black">View Trailer</p>
+            <span class="icon inline-block h-8 w-8 border-[3px] border-black align-middle">
+              <svg class="-ml-1 -mt-1 h-8 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m7-7H5" />
+              </svg>
+            </span>
+          </div>
         </div>
-    </section>
-
+      </section>
+      
 </body>
 
 </html>

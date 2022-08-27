@@ -38,8 +38,9 @@
                 display: none !important;
             }
         }
-        @media (min-width: 63rem) and (max-width: 75rem){
-            .fix{
+
+        @media (min-width: 63rem) and (max-width: 75rem) {
+            .fix {
                 height: 7rem;
             }
         }
@@ -49,73 +50,126 @@
 <body>
     <div class="fix hide first-nav h-16 py-4 px-6 text-[#969696] lg:h-20 lg:py-3">
         <ul class="flex flex-wrap justify-between lg:gap-y-1">
-          <div class="flex flex-wrap gap-6">
-            <li><img class="w-44" src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/global/cod-logo-white.svg" alt="" /></li>
-            <li class="text-xl uppercase hover:text-[#71af3a] cursor-pointer"><a>Games</a></li>
-            <li class="text-xl uppercase hover:text-[#71af3a] cursor-pointer"><a>News</a></li>
-            <li class="text-xl uppercase hover:text-[#71af3a] cursor-pointer"><a>Esports</a></li>
-            <li class="text-xl uppercase hover:text-[#71af3a] cursor-pointer"><a>Support</a></li>
-            <li class="text-xl uppercase hover:text-[#71af3a] cursor-pointer"><a>Shop</a></li>
-          </div>
-          <div class="flex flex-wrap gap-6">
-            <li class="text-left text-xl uppercase hover:text-white cursor-pointer"><a>Login</a></li>
-            <li class="text-left text-xl uppercase hover:text-white cursor-pointer"><a>Sign up</a></li>
-            <li class="text-left text-xl uppercase hover:text-white cursor-pointer"><a>My call of duty</a></li>
-            <li class="text-left text-xl uppercase hover:text-white cursor-pointer"><a>Purchase</a></li>
-          </div>
-        </ul>
-      </div>
-      <nav class="sticky top-0 bg-black py-2 px-6">
-        <ul class="flex flex-wrap items-center justify-between">
-          <li>
-            <img class="w-48" src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/legacy/ghosts/cod-ghosts-logo.png" alt="" />
-          </li>
-          <li class="text-4xl font-medium uppercase tracking-wide text-white lg:hidden">Purchase</li>
-          <li>
-            <div class="dropdown dropdown-end lg:hidden">
-              <label tabindex="0" class=""
-                ><svg class="h-16" style="color: white;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg
-              ></label>
-              <ul tabindex="0" class="overflow-y-auto dropdown-content menu flex h-screen w-[90vw] flex-col gap-4 bg-slate-900 p-2 text-[#969696]">
-                <li><img class="w-44" src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/global/cod-logo-white.svg" alt="" /></li>
-                <li class="text-left text-xl uppercase hover:text-white"><a>Games</a></li>
-                <li class="text-left text-xl uppercase hover:text-white"><a>News</a></li>
-                <li class="text-left text-xl uppercase hover:text-white"><a>Esports</a></li>
-                <li class="text-left text-xl uppercase hover:text-white"><a>Support</a></li>
-                <li class="text-left text-xl uppercase hover:text-white"><a>Shop</a></li>
-                <li class="text-left text-xl uppercase hover:text-white"><a>My call of duty</a></li>
-                <li class="text-left text-xl uppercase hover:text-white"><a>Login</a></li>
-                <li class="text-left text-xl uppercase hover:text-white"><a>Sign up</a></li>
-              </ul>
+            <div class="flex flex-wrap gap-6">
+                <li><img class="w-44"
+                        src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/global/cod-logo-white.svg"
+                        alt="" /></li>
+                <li class="text-xl uppercase hover:text-[#71af3a] cursor-pointer"><a>Games</a></li>
+                <li class="text-xl uppercase hover:text-[#71af3a] cursor-pointer"><a>News</a></li>
+                <li class="text-xl uppercase hover:text-[#71af3a] cursor-pointer"><a>Esports</a></li>
+                <li class="text-xl uppercase hover:text-[#71af3a] cursor-pointer"><a>Support</a></li>
+                <li class="text-xl uppercase hover:text-[#71af3a] cursor-pointer"><a>Shop</a></li>
             </div>
-          </li>
+            <div class="flex flex-wrap gap-6">
+                <li class="text-left text-xl uppercase hover:text-white cursor-pointer"><a>Login</a></li>
+                <li class="text-left text-xl uppercase hover:text-white cursor-pointer"><a>Sign up</a></li>
+                <li class="text-left text-xl uppercase hover:text-white cursor-pointer"><a>My call of duty</a></li>
+                <li class="text-left text-xl uppercase hover:text-white cursor-pointer"><a>Purchase</a></li>
+            </div>
         </ul>
-      </nav>
-      
-      <section class="bg-black">
+    </div>
+    <nav class="sticky top-0 bg-black py-2 px-6">
+        <ul class="flex flex-wrap items-center justify-between">
+            <li>
+                <img class="w-48"
+                    src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/legacy/ghosts/cod-ghosts-logo.png"
+                    alt="" />
+            </li>
+            <li class="text-4xl font-medium uppercase tracking-wide text-white lg:hidden">Purchase</li>
+            <li>
+                <div class="dropdown dropdown-end lg:hidden">
+                    <label tabindex="0" class=""><svg class="h-16" style="color: white;"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg></label>
+                    <ul tabindex="0"
+                        class="overflow-y-auto dropdown-content menu flex h-screen w-[90vw] flex-col gap-4 bg-slate-900 p-2 text-[#969696]">
+                        <li><img class="w-44"
+                                src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/global/cod-logo-white.svg"
+                                alt="" /></li>
+                        <li class="text-left text-xl uppercase hover:text-white"><a>Games</a></li>
+                        <li class="text-left text-xl uppercase hover:text-white"><a>News</a></li>
+                        <li class="text-left text-xl uppercase hover:text-white"><a>Esports</a></li>
+                        <li class="text-left text-xl uppercase hover:text-white"><a>Support</a></li>
+                        <li class="text-left text-xl uppercase hover:text-white"><a>Shop</a></li>
+                        <li class="text-left text-xl uppercase hover:text-white"><a>My call of duty</a></li>
+                        <li class="text-left text-xl uppercase hover:text-white"><a>Login</a></li>
+                        <li class="text-left text-xl uppercase hover:text-white"><a>Sign up</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="bg-black">
         <div class="hero">
-          <div class="hero-img wrapper">
-            <img src="https://www.callofduty.com/content/dam/atvi/callofduty/legacy/common/cod-ghosts.jpg" alt="" />
-          </div>
+            <div class="hero-img wrapper">
+                <img src="https://www.callofduty.com/content/dam/atvi/callofduty/legacy/common/cod-ghosts.jpg" alt="" />
+            </div>
         </div>
         <div class="hero-info-wrapper bg-black py-12 px-9">
-          <div class="hero-text">
-            <p class="colorBlue text-3xl tracking-tight">CALL OF DUTY</p>
-            <p class="colorBlue mb-1 text-5xl tracking-normal">GHOSTS</p>
-            <p class="max-w-2xl text-lg text-white"><span class="font-semibold">WE ARE ALL WE'VE GOT.</span> This new chapter in the Call of Duty® franchise features a fresh dynamic, where players are on the side of a crippled nation, fighting not for freedom, or liberty, but simply to survive. Special Operations forces, a mysterious group known only as "Ghosts", lead the battle against a newly-emerged, technologically-superior, global power.</p>
-          </div>
-          <div class="hero-btn ml-auto flex w-1/2 flex-wrap justify-between gap-x-7 bg-[#5e82a3] py-4 px-6 sm:w-3/4 md:w-2/4 xl:w-2/5">
-            <p class="text-2xl uppercase tracking-wide text-black">View Trailer</p>
-            <span class="icon inline-block h-8 w-8 border-[3px] border-black align-middle">
-              <svg class="-ml-1 -mt-1 h-8 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m7-7H5" />
-              </svg>
-            </span>
-          </div>
+            <div class="hero-text">
+                <p class="colorBlue text-3xl tracking-tight">CALL OF DUTY</p>
+                <p class="colorBlue mb-1 text-5xl tracking-normal">GHOSTS</p>
+                <p class="max-w-2xl text-lg text-white"><span class="font-semibold">WE ARE ALL WE'VE GOT.</span> This
+                    new chapter in the Call of Duty® franchise features a fresh dynamic, where players are on the side
+                    of a crippled nation, fighting not for freedom, or liberty, but simply to survive. Special
+                    Operations forces, a mysterious group known only as "Ghosts", lead the battle against a
+                    newly-emerged, technologically-superior, global power.</p>
+            </div>
+            <div
+                class="hero-btn ml-auto flex w-1/2 flex-wrap justify-between gap-x-7 bg-[#5e82a3] py-4 px-6 sm:w-3/4 md:w-2/4 xl:w-1/4">
+                <p class="text-2xl uppercase tracking-wide text-black">View Trailer</p>
+                <span class="icon inline-block h-8 w-8 border-[3px] border-black align-middle">
+                    <svg class="-ml-1 -mt-1 h-8 text-black" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m7-7H5" />
+                    </svg>
+                </span>
+            </div>
         </div>
-      </section>
-      
+    </section>
+
+    <section>
+        <div class="flex flex-col bg-black py-4 px-9 lg:grid lg:grid-cols-4 lg:px-12">
+            <div class="lg:col-span-3">
+                <img src="https://www.callofduty.com/content/dam/atvi/callofduty/ghosts/media/screenshot15.jpg"
+                    alt="" />
+                <div class="flex flex-wrap items-center justify-center gap-7 text-center">
+                    <div class="item-1 mt-4 h-4 w-10 cursor-pointer border-2 border-white bg-white"></div>
+                    <div class="item-2 mt-4 h-4 w-10 cursor-pointer border-2 border-white"></div>
+                    <div class="item-3 mt-4 h-4 w-10 cursor-pointer border-2 border-white"></div>
+                    <div class="item-4 mt-4 h-4 w-10 cursor-pointer border-2 border-white"></div>
+                    <div class="item-5 mt-4 h-4 w-10 cursor-pointer border-2 border-white"></div>
+                    <div class="item-6 mt-4 h-4 w-10 cursor-pointer border-2 border-white"></div>
+                    <div class="item-7 mt-4 h-4 w-10 cursor-pointer border-2 border-white"></div>
+                </div>
+            </div>
+            <div class="flex flex-col mt-6 gap-y-3 items-center lg:ml-auto lg:w-full">
+                <div class="bg-slate-200 text-black w-4/5 px-3">
+                    <p class="font-medium text-3xl py-3 cursor-pointer before:text-white">MULTIPLAYER</p>
+                    <p class="text-xl tracking-tight leading-8 pb-4">In Call of Duty®: Ghosts multiplayer, customize
+                        your soldier and squad for the first time. Level environments are more realistic and immersive
+                        than ever before.
+                    </p>
+                </div>
+                <div
+                    class="text-xl w-4/5 py-3 uppercase bg-[#313131] px-3 hover:bg-white hover:text-black cursor-pointer transition-all duration-300">
+                    Campaign
+                </div>
+                <div
+                    class="text-xl w-4/5 py-3 uppercase bg-[#313131] px-3 hover:bg-white hover:text-black cursor-pointer transition-all duration-300">
+                    Extinction</div>
+                <div
+                    class="text-xl w-4/5 py-3 uppercase bg-[#313131] px-3 hover:bg-white hover:text-black cursor-pointer transition-all duration-300">
+                    DLC
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 </body>
 
 </html>

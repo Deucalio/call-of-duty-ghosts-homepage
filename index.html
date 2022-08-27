@@ -134,16 +134,16 @@
     <section>
         <div class="flex flex-col bg-black py-4 px-9 lg:grid lg:grid-cols-4 lg:gap-x-6 lg:px-12 2xl:gap-x-6">
             <div class="lg:col-span-3">
-                <img src="https://www.callofduty.com/content/dam/atvi/callofduty/ghosts/media/screenshot15.jpg"
-                    alt="" />
-                <div class="flex flex-wrap items-center justify-center gap-7 text-center">
-                    <div class="item-1 mt-4 h-4 w-10 cursor-pointer border-2 border-white bg-white"></div>
+                <img class="" id="Imgdiv"
+                    src="https://www.callofduty.com/content/dam/atvi/callofduty/ghosts/media/screenshot15.jpg" alt="" />
+                <div class="flex flex-wrap items-center justify-center gap-7 text-center items">
+                    <div class="item-0 mt-4 h-4 w-10 cursor-pointer border-2 border-white bg-white"></div>
+                    <div class="item-1 mt-4 h-4 w-10 cursor-pointer border-2 border-white"></div>
                     <div class="item-2 mt-4 h-4 w-10 cursor-pointer border-2 border-white"></div>
                     <div class="item-3 mt-4 h-4 w-10 cursor-pointer border-2 border-white"></div>
                     <div class="item-4 mt-4 h-4 w-10 cursor-pointer border-2 border-white"></div>
                     <div class="item-5 mt-4 h-4 w-10 cursor-pointer border-2 border-white"></div>
                     <div class="item-6 mt-4 h-4 w-10 cursor-pointer border-2 border-white"></div>
-                    <div class="item-7 mt-4 h-4 w-10 cursor-pointer border-2 border-white"></div>
                 </div>
             </div>
             <div class="flex flex-col mt-6 gap-y-3 items-center lg:ml-auto lg:w-full">
@@ -169,5 +169,33 @@
 
 
 </body>
+
+<script>
+    const buttons = document.querySelector(".items").children;
+    const divForImg = document.querySelector("#Imgdiv");
+
+    const buttonsList = [...buttons];
+    const imageURLs = ['https://www.callofduty.com/content/dam/atvi/callofduty/ghosts/media/screenshot15.jpg',
+        'https://www.callofduty.com/content/dam/atvi/callofduty/ghosts/home/resistance_ghosts_960x540.png',
+        'https://www.callofduty.com/content/dam/atvi/callofduty/ghosts/images/COD_Ghosts_MP_In_Sight.jpg',
+        'https://www.callofduty.com/content/dam/atvi/callofduty/ghosts/media/chasmsquadsthumbnail.jpg',
+        'https://www.callofduty.com/content/dam/atvi/callofduty/ghosts/images/COD_Ghosts_Struck_Down_Overwatch.jpg',
+        'https://www.callofduty.com/content/dam/atvi/callofduty/legacy/ghosts/cod-ghosts-mp-screenshot3.jpg',
+        'https://www.callofduty.com/content/dam/atvi/callofduty/legacy/ghosts/cod-ghosts-mp-screenshot2.jpg'
+    ]
+
+    buttonsList.forEach(btn => btn.addEventListener("click", () => {
+
+        buttonsList.forEach(btn => {
+            if (btn.classList[7] == "bg-white") {
+                btn.classList.remove("bg-white")
+            }
+        })
+        btn.classList.add("bg-white");
+        let imageIndex = btn.classList[0].substr(5);
+        divForImg.setAttribute("src", `${imageURLs[imageIndex]}`)
+        console.log(imageIndex);
+    }))
+</script>
 
 </html>
